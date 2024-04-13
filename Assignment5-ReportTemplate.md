@@ -15,15 +15,15 @@
 
 # Assessment Using Reliability Growth Testing 
 
-![](./media/geometric.png)
+![](./media/geometric.PNG)
 
-![](./media/littlewood.png)
+![](./media/littlewood.PNG)
 
 # Assessment Using Reliability Demonstration Chart 
 
 # 
 
-![](./media/RDC1.png)
+![](./media/RDC1.PNG)
 
 # Comparison of Results
 
