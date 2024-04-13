@@ -35,9 +35,9 @@ Each team member ran the software and performed the analyses on their own, then 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-Some of the softwares can be difficult to use and interpet. Each of the team members initially struggled understanding how the dataset needed to be modified to work with the programs. 
+Some of the softwares can be difficult to use and interpet. Each of the team members initially struggled understanding how the dataset needed to be modified to work with the programs. Another difficulty ecountered by the team was understanding the failure dataset, which was hard to decipher without reading the accompanying study. 
 
 # Comments/feedback on the lab itself
 
-It might make the lab easier to interpet if the data is provided in the txt format used by most of the programs rather than just the excel format.
+It might make the lab easier to interpet if the data is provided in the txt format used by most of the programs rather than just the excel format. Overall this was an interesting and informative lab that helped introduce the team to reliability testing. 
 
