@@ -2,16 +2,22 @@
 
 **Lab. Report \#5 – Software Reliability Assessment**
 
-| Group \#:       |   |
-|-----------------|---|
-| Student Names:  |   |
-|                 |   |
-|                 |   |
-|                 |   |
+| Group \#:6     |     |
+| -------------- | --- |
+| Student Names: |     |
+| Sean Temple    |     |
+| John Chernoff               |     |
+| Nicholas Langley               |     |
+| Raisa Mehjabin Azni            |   
+| Eric Yoon            |   
 
 # Introduction
 
-# 
+In this lab report we focus on the dependability and reliability of software systems, specifically through hands-on practice with reliability assessment tools. The aim is to analyze integration test data using two distinct approaches: Reliability Growth Testing and Reliability Demonstration Chart (RDC). By implementing these methodologies, we will evaluate the failure data of a hypothetical system to understand its reliability over time and under testing conditions.
+
+The first part of the lab involves installing and utilizing reliability growth assessment tools such as START or C-SFRAT to generate failure rate and reliability plots from provided test data. This exercise will enhance our understanding of how software reliability evolves as defects are identified and corrected, which is crucial for developing robust software systems.
+
+In the second part, we employ an RDC tool to assess whether the system meets specified reliability targets, which is particularly useful when failure data are scarce. This approach will provide insights into the adequacy of the testing process and whether the system's mean time to failure (MTTF) meets the desired thresholds.
 
 # Assessment Using Reliability Growth Testing 
 
