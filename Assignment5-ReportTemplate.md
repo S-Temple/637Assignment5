@@ -15,11 +15,21 @@
 
 # Assessment Using Reliability Growth Testing 
 
+## Result of model comparison (selecting top two models)
+
+The only models that I could get working were geometric and littlewood.
+
+## Result of range analysis (an explanation of which part of data is good for proceeding with the analysis)
+
+## Plots for failure rate and reliability of the SUT for the test data provided
+
 ![](./media/geometric.PNG)
 
 ![](./media/littlewood.PNG)
 
-# A discussion on the advantages and disadvantages of reliability growth analysis
+## A discussion on decision making given a target failure rate
+
+## A discussion on the advantages and disadvantages of reliability growth analysis
 
 
 Reliability Growth Analysis (RGA) is a vital method used in assessing system reliability, offering several advantages and some notable disadvantages. One significant advantage of RGA is its ability to track the reliability of a system over time, providing insights into how modifications and improvements affect the system's performance. This iterative approach allows engineers to identify failure modes and implement corrective actions, thus enhancing system reliability incrementally. Moreover, RGA helps in planning maintenance and predicting future failures, which can be crucial for budgeting and logistics in industries where uptime is critical.
@@ -30,9 +40,13 @@ In summary, while Reliability Growth Analysis is a powerful tool for enhancing a
 
 # Assessment Using Reliability Demonstration Chart 
 
+## 3 plots for MTTFmin, twice and half of it for your test data
+
 ![](./media/RDC1.PNG)
 
-# A discussion on the advantages and disadvantages of RDC
+## Explain your evaluation and justification of how you decide the MTTFmin
+
+## A discussion on the advantages and disadvantages of RDC
 
 Reliability demonstration charts (RDCs) serve as useful tools in quality and reliability engineering, providing a visual representation of reliability data that aids in communicating the reliability status of systems or components. One of the key advantages of using an RDC is its ability to support decision-making processes by illustrating the confidence levels and reliability estimates across different sample sizes. This visual aid can be particularly beneficial when determining the amount of testing required to meet specific reliability targets. Additionally, RDCs enable a quantitative analysis of reliability, calculating the probability that a system will reach a certain level of reliability over a specified duration. This is crucial in industries where high reliability is paramount, such as in aerospace or medical devices. The flexibility of RDCs to adapt to various testing scenarios and their ability to help manage resources efficiently by optimizing test planning are also significant benefits.
 
