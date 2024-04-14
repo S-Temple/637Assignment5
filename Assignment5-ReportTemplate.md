@@ -20,8 +20,30 @@ The first part of the lab involves installing and utilizing reliability growth a
 In the second part, we employ an RDC tool to assess whether the system meets specified reliability targets, which is particularly useful when failure data are scarce. This approach will provide insights into the adequacy of the testing process and whether the system's mean time to failure (MTTF) meets the desired thresholds.
 
 # Assessment Using Reliability Growth Testing 
+We used two tools first being C-SFRAT where the dataset was imported directly. The data series discriptions are as follows:
+
+> T: time interval
+
+> FC: failure count
+
+> E: execution time measured in hours
+
+> F:failure identification work measured in person hours
+
+> C: computer time failure identification measured in hours 
+
+![](./media/FailuresVSIntervals.png)
+After running the models the results of all combinations graphed:
+![](./media/AllModels.png)
+
 
 ## Result of model comparison (selecting top two models)
+To determine the best model in the C-SFRAT software uses a weighted average of Akaike information criterion (AIC) and Bayesian Information Criteria (BIC) as well as sum of squares (SSE) and predictive sum of squares error (PSSE).Keeping default values weights all equally while excluding predictive sum of squares error (PSSE). Sorting the table leaves the best preforming models at the top of the chart below:
+![](./media/ModelPreformance.png)
+Best models overladed with actual data:
+![](./media/BestModels.png)
+With three of the top models the overall best performing model is geometric.
+
 
 The only models that I could get working were geometric and littlewood.
 
@@ -34,6 +56,10 @@ The only models that I could get working were geometric and littlewood.
 ![](./media/littlewood.PNG)
 
 ## A discussion on decision making given a target failure rate
+Setting a failure intensity target of 0.3 the models all predict a lot more intervals are required failures are within range:
+![](./media/predict.png)
+**IS THIS CORRECT? DID YOU GET SAME RESULTS?**
+Given more data on the project a prediction of costs can be made using the last tab of the C-SFRAT software.
 
 ## A discussion on the advantages and disadvantages of reliability growth analysis
 
