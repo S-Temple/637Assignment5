@@ -36,6 +36,7 @@ We used two tools first being C-SFRAT where the dataset was imported directly. T
 After running the models the results of all combinations graphed:
 ![](./media/AllModels.png)
 
+On first glance, almost all of the models generally follow the trend of the data, the only models that don't follow it are the ones using the IFR Salvia & Bollinger (non-generalized) Hazard function
 
 ## Result of model comparison (selecting top two models)
 To determine the best model in the C-SFRAT software uses a weighted average of Akaike information criterion (AIC) and Bayesian Information Criteria (BIC) as well as sum of squares (SSE) and predictive sum of squares error (PSSE).Keeping default values weights all equally while excluding predictive sum of squares error (PSSE). Sorting the table leaves the best preforming models at the top of the chart below:
