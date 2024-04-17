@@ -77,6 +77,8 @@ In summary, while Reliability Growth Analysis is a powerful tool for enhancing a
 
 ## 3 plots for MTTFmin, twice and half of it for your test data
 
+**USING C-SFRAT**
+
 MTTFmin
 
 ![](./media/RDC_MTTFMIN.PNG)
@@ -88,6 +90,44 @@ Twice MTTFmin
 Half MTTFmin
 
 ![](./media/RDC_MTTFHALF.PNG)
+
+**USING RDC**
+
+The Relability Demonstration Chart Excel sheet was utilized for generating RDC graphs. Since it was originally set up to plot only 16 failures, adjustments were necessary to accommodate the given data.
+
+The default risk profile was employed, with the following parameters:
+
+    Discrimination Ratio (γ): 2
+    Developer's Risk (α): 0.1
+    User's Risk (β): 0.1
+
+Prior to plotting, the failure data underwent modification. Given that the data was presented as failures per interval rather than time between failures, a conversion process was implemented. This conversion assumed a uniform distribution of failures within each interval. For instance, if the data is provided as:
+
+![image](https://github.com/S-Temple/637Assignment5/assets/132394575/b27948b0-163f-4df8-a345-6ecae90719e0)
+
+
+It was transformed into time between failures as illustrated below:
+
+![image](https://github.com/S-Temple/637Assignment5/assets/132394575/83700d42-890c-4fd9-b5b1-aaf944f4c11e)
+
+The converted data used can be found in the RDC_Failure_Data excel sheet. 
+
+The initial plot below illustrates the Root Cause Analysis (RDC) graph utilizing the derived Mean Time To Failure (MTTF) of the System Under Test (SUT). The Failure Intensity Observation (FIO) is computed as 92 failures per 31 intervals, resulting in a value of 2.97. Consequently, the MTTF is determined as 1 divided by 2.97, equaling approximately 0.337.
+
+![image](https://github.com/S-Temple/637Assignment5/assets/132394575/89830e0b-06a6-4dc2-81aa-4dff5add8561)
+
+The subsequent plot represents the minimum Mean Time To Failure (MTTF) required for the system to be deemed acceptable. This threshold was established by adjusting the Failure Intensity Observation (FIO) until the SUT marginally breached the acceptable region. It was ascertained that the FIO amounted to 700 failures over 31 intervals, equivalent to 22.58 failures per interval. This adjustment yields an MTTF of 0.044.
+
+![image](https://github.com/S-Temple/637Assignment5/assets/132394575/2d8a2d1b-7981-4078-8f5a-65369eda23ea)
+
+The third plot represents double the minimum Mean Time To Failure (MTTF), resulting in an MTTF of 0.088. This corresponds to a Failure Intensity Observation (FIO) of 350 failures over 31 intervals, which equals approximately 11.29 failures per interval. In this scenario, the SUT promptly enters the reject region.
+
+![image](https://github.com/S-Temple/637Assignment5/assets/132394575/611ae416-2e41-4a06-a77a-1630b39b19cc)
+
+
+For the last plot, the Mean Time To Failure (MTTF) is halved, resulting in an MTTF of 0.022. This corresponds to a Failure Intensity Observation (FIO) of 1400 failures over 31 intervals, approximately 45.16 failures per interval. In this instance, the SUT promptly enters the accept region.
+
+![image](https://github.com/S-Temple/637Assignment5/assets/132394575/8e2381a8-1334-4cdc-9ec1-5f96a70800f0)
 
 ## Explain your evaluation and justification of how you decide the MTTFmin
 
