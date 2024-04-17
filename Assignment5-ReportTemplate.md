@@ -77,10 +77,13 @@ In summary, while Reliability Growth Analysis is a powerful tool for enhancing a
 
 ## 3 plots for MTTFmin, twice and half of it for your test data
 
+MTTFmin
 ![](./media/RDC_MTTFMIN.PNG)
 
+Twice MTTFmin
 ![](./media/RDC_MTTFTWICE.PNG)
 
+Half MTTFmin
 ![](./media/RDC_MTTFHALF.PNG)
 
 ## Explain your evaluation and justification of how you decide the MTTFmin
