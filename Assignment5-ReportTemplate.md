@@ -60,12 +60,11 @@ The only models that I could get working were geometric and littlewood.
 Setting a failure intensity target of 0.3 the models all predict a lot more intervals are required failures are within range:
 ![](./media/predict.png)
 
-Given more data on the project a prediction of costs can be made using the last tab of the C-SFRAT software. These predictions are based on the effort per interval across the differnt covariates. Playing around with these effort values allows the user to see how different allocations of resources can affect the predicted failure rate. If one setup has a significant advantage over the other, the distibution of effort can be adjusted to match, potentially improving speed of improvement.  
+Given more data on the project a prediction of costs can be made using the last tab of the C-SFRAT software. These predictions are based on the effort per interval across the different covariates. Playing around with these effort values allows the user to see how different allocations of resources can affect the predicted failure rate. If one setup has a significant advantage over the other, the distibution of effort can be adjusted to match, potentially improving speed of improvement.  
 
 For the example data provided, the IFR Salvia & Bollinger (non-generalized) hazard function predicts the failure rate will be reached in 11  more intervals, but the other top scoring functions  predict much longer times. The longer times should probably be taken more seriously due to the increased number of fucntions predicting that range, as well as to avoid being too optimistic when making decisions.
 
 ## A discussion on the advantages and disadvantages of reliability growth analysis
-
 
 Reliability Growth Analysis (RGA) is a vital method used in assessing system reliability, offering several advantages and some notable disadvantages. One significant advantage of RGA is its ability to track the reliability of a system over time, providing insights into how modifications and improvements affect the system's performance. This iterative approach allows engineers to identify failure modes and implement corrective actions, thus enhancing system reliability incrementally. Moreover, RGA helps in planning maintenance and predicting future failures, which can be crucial for budgeting and logistics in industries where uptime is critical.
 
