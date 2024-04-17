@@ -91,6 +91,8 @@ Half MTTFmin
 
 ## Explain your evaluation and justification of how you decide the MTTFmin
 
+The MTTFmin was determined by taking the failure counts, execution times, and time intervals from the original dataset and converting them into a text file which could be read by the SRTAT program. Upon running the RDC several different coefficients for the discrimination ratio, customer risk, and developer risk were tried in order to find a set that could be used to evalaute the data with a range of MTTFs that pass or fail. Then the MTTF measured in failures per second was lowered iteratively until finding the minimum MTTF at which the system would pass, which was 0.25 failures per second. 
+
 ## A discussion on the advantages and disadvantages of RDC
 
 Reliability demonstration charts (RDCs) serve as useful tools in quality and reliability engineering, providing a visual representation of reliability data that aids in communicating the reliability status of systems or components. One of the key advantages of using an RDC is its ability to support decision-making processes by illustrating the confidence levels and reliability estimates across different sample sizes. This visual aid can be particularly beneficial when determining the amount of testing required to meet specific reliability targets. Additionally, RDCs enable a quantitative analysis of reliability, calculating the probability that a system will reach a certain level of reliability over a specified duration. This is crucial in industries where high reliability is paramount, such as in aerospace or medical devices. The flexibility of RDCs to adapt to various testing scenarios and their ability to help manage resources efficiently by optimizing test planning are also significant benefits.
@@ -100,6 +102,8 @@ However, there are several disadvantages associated with RDCs. Their effectivene
 Overall, while RDCs offer structured and visually engaging ways to demonstrate system reliability, their use should be balanced with careful statistical analysis and complemented by other analytical methods to ensure comprehensive system evaluations and informed decision-making.
 
 # Comparison of Results
+
+Both reliability analyses found that the system had some reliability issues but was able to pass the tests at certain thresholds. Given that the dataset used for the reliability growth analysis and reliability demonstration charts were not exactly the same it is difficult to compare them further.
 
 # Discussion on Similarity and Differences of the Two Techniques
 
