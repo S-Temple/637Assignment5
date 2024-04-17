@@ -93,6 +93,11 @@ However, there are several disadvantages associated with RDCs. Their effectivene
 Overall, while RDCs offer structured and visually engaging ways to demonstrate system reliability, their use should be balanced with careful statistical analysis and complemented by other analytical methods to ensure comprehensive system evaluations and informed decision-making.
 
 # Comparison of Results
+Through comparing the convergence or divergence of these model lines with the step-function-like graph that represents actual failure data, the accuracy of predictions can be starkly contrasted. Different predictive behaviors are exhibited by the reliability growth models, including geometric and Littlewood. Some of these, the geometric model appears to provide a more accurate approximation to the actual data, particularly in the later intervals, as indicated by the line of prediction that aligns with the failure data steps.
+
+The graphical overlays in the "Best models overlaid with actual data" graph not only show which models are closely tracking the failure data, but also detect periods of over- or under-estimation of failures. In addition, the accuracy of each model's predictions may also be determined by examining the location of model lines around the actual failure phases. The closer the lines are to each other, the greater the agreement among the models on the system's reliability at that specific moment.
+
+The ultimate comparison indicates that some models excel at predicting early failures, while others show greater accuracy across the whole lifespan of the system. Hence, the choice of the most suitable model may vary depending on the particular stage of system operation under consideration, such as the initial phase, intermediate phase, or deterioration phase. This thorough comparison of several reliability growth models highlights the subtle differences in model selection and stresses the significance of taking numerous viewpoints into account when evaluating the dependability of intricate systems. The comparison findings not only provide information about which model is the most suitable for the present data, but also give strategic insights for continuing reliability improvement and focused testing.
 
 # Discussion on Similarity and Differences of the Two Techniques
 
