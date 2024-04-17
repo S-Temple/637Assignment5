@@ -115,6 +115,8 @@ Each team member ran the software and performed the analyses on their own, then 
 
 Some of the softwares can be difficult to use and interpet. Each of the team members initially struggled understanding how the dataset needed to be modified to work with the programs. Another difficulty ecountered by the team was understanding the failure dataset, which was hard to decipher without reading the accompanying study. 
 
+The provided dataset also was not set up well for use in SRTAT which requires time between failure data. The provided data could have been modified to this state by dividing 1 / #number of failures for each interval, but it was simpler to just put the data into C-SFRAT instead
+
 # Comments/feedback on the lab itself
 
 It might make the lab easier to interpet if the data is provided in the txt format used by most of the programs rather than just the excel format. Overall this was an interesting and informative lab that helped introduce the team to reliability testing. 
