@@ -77,9 +77,13 @@ In summary, while Reliability Growth Analysis is a powerful tool for enhancing a
 
 ## 3 plots for MTTFmin, twice and half of it for your test data
 
-## Explain your evaluation and justification of how you decide the MTTFmin
+![](./media/RDC_MTTFMIN.PNG)
 
-![](./media/RDC1.PNG)
+![](./media/RDC_MTTFTWICE.PNG)
+
+![](./media/RDC_MTTFHALF.PNG)
+
+## Explain your evaluation and justification of how you decide the MTTFmin
 
 ## A discussion on the advantages and disadvantages of RDC
 
