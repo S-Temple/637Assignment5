@@ -46,8 +46,6 @@ Best models overladed with actual data:
 With three of the top models the overall best performing model is geometric.
 
 
-The only models that I could get working were geometric and littlewood.
-
 ## Result of range analysis (an explanation of which part of data is good for proceeding with the analysis)
 
 ## Plots for failure rate and reliability of the SUT for the test data provided
