@@ -136,6 +136,7 @@ For the last plot, the Mean Time To Failure (MTTF) is halved, resulting in an MT
 The MTTFmin was determined by taking the failure counts, execution times, and time intervals from the original dataset and converting them into a text file which could be read by the SRTAT program. Upon running the RDC several different coefficients for the discrimination ratio, customer risk, and developer risk were tried in order to find a set that could be used to evalaute the data with a range of MTTFs that pass or fail. Then the MTTF measured in failures per second was lowered iteratively until finding the minimum MTTF at which the system would pass, which was 0.25 failures per second. 
 
 **USING RDC**
+
 Determining the minimum Mean Time To Failure (MTTFmin) through the Root Cause Analysis (RDC) method involves establishing the Failure Intensity Objective (FIO), which represents the maximum allowable failure rate for the software. The MTTFmin is then identified as the point where the RDC curve intersects the FIO line, signifying the minimum mean time to failure required for the software to achieve the desired level of reliability. On the chart, this is where it does not enter the reject area in red, and also enters the acceptable area. If the RDC curve consistently remains above the FIO line, the software is deemed reliable for use (above reject zone). Conversely, if the RDC curve falls below the FIO line at any point (reject zone), corrective measures are necessary to enhance the software's reliability.
 
 ## A discussion on the advantages and disadvantages of RDC
