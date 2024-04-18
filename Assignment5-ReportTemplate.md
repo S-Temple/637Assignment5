@@ -112,26 +112,31 @@ It was transformed into time between failures as illustrated below:
 
 The converted data used can be found in the RDC_Failure_Data excel sheet. 
 
-The initial plot below illustrates the Root Cause Analysis (RDC) graph utilizing the derived Mean Time To Failure (MTTF) of the System Under Test (SUT). The Failure Intensity Observation (FIO) is computed as 92 failures per 31 intervals, resulting in a value of 2.97. Consequently, the MTTF is determined as 1 divided by 2.97, equaling approximately 0.337.
+The initial plot below illustrates the Root Cause Analysis (RDC) graph utilizing the derived Mean Time To Failure (MTTF) of the System Under Test (SUT). The Failure Intensity Objective (FIO) is computed as 92 failures per 31 intervals, resulting in a value of 2.97. Consequently, the MTTF is determined as 1 divided by 2.97, equaling approximately 0.337.
 
 ![image](https://github.com/S-Temple/637Assignment5/assets/132394575/89830e0b-06a6-4dc2-81aa-4dff5add8561)
 
-The subsequent plot represents the minimum Mean Time To Failure (MTTF) required for the system to be deemed acceptable. This threshold was established by adjusting the Failure Intensity Observation (FIO) until the SUT marginally breached the acceptable region. It was ascertained that the FIO amounted to 700 failures over 31 intervals, equivalent to 22.58 failures per interval. This adjustment yields an MTTF of 0.044.
+The subsequent plot represents the minimum Mean Time To Failure (MTTF) required for the system to be deemed acceptable. This threshold was established by adjusting the FIO until the SUT marginally breached the acceptable region. It was ascertained that the FIO amounted to 700 failures over 31 intervals, equivalent to 22.58 failures per interval. This adjustment yields an MTTF of 0.044.
 
 ![image](https://github.com/S-Temple/637Assignment5/assets/132394575/2d8a2d1b-7981-4078-8f5a-65369eda23ea)
 
-The third plot represents double the minimum Mean Time To Failure (MTTF), resulting in an MTTF of 0.088. This corresponds to a Failure Intensity Observation (FIO) of 350 failures over 31 intervals, which equals approximately 11.29 failures per interval. In this scenario, the SUT promptly enters the reject region.
+The third plot represents double the minimum Mean Time To Failure (MTTF), resulting in an MTTF of 0.088. This corresponds to a FIO of 350 failures over 31 intervals, which equals approximately 11.29 failures per interval. In this scenario, the SUT promptly enters the reject region.
 
 ![image](https://github.com/S-Temple/637Assignment5/assets/132394575/611ae416-2e41-4a06-a77a-1630b39b19cc)
 
 
-For the last plot, the Mean Time To Failure (MTTF) is halved, resulting in an MTTF of 0.022. This corresponds to a Failure Intensity Observation (FIO) of 1400 failures over 31 intervals, approximately 45.16 failures per interval. In this instance, the SUT promptly enters the accept region.
+For the last plot, the Mean Time To Failure (MTTF) is halved, resulting in an MTTF of 0.022. This corresponds to a FIO of 1400 failures over 31 intervals, approximately 45.16 failures per interval. In this instance, the SUT promptly enters the accept region.
 
 ![image](https://github.com/S-Temple/637Assignment5/assets/132394575/8e2381a8-1334-4cdc-9ec1-5f96a70800f0)
 
 ## Explain your evaluation and justification of how you decide the MTTFmin
 
+**USING C-SFRAT**
+
 The MTTFmin was determined by taking the failure counts, execution times, and time intervals from the original dataset and converting them into a text file which could be read by the SRTAT program. Upon running the RDC several different coefficients for the discrimination ratio, customer risk, and developer risk were tried in order to find a set that could be used to evalaute the data with a range of MTTFs that pass or fail. Then the MTTF measured in failures per second was lowered iteratively until finding the minimum MTTF at which the system would pass, which was 0.25 failures per second. 
+
+**USING RDC**
+Determining the minimum Mean Time To Failure (MTTFmin) through the Root Cause Analysis (RDC) method involves establishing the Failure Intensity Objective (FIO), which represents the maximum allowable failure rate for the software. The MTTFmin is then identified as the point where the RDC curve intersects the FIO line, signifying the minimum mean time to failure required for the software to achieve the desired level of reliability. On the chart, this is where it does not enter the reject area in red, and also enters the acceptable area. If the RDC curve consistently remains above the FIO line, the software is deemed reliable for use (above reject zone). Conversely, if the RDC curve falls below the FIO line at any point (reject zone), corrective measures are necessary to enhance the software's reliability.
 
 ## A discussion on the advantages and disadvantages of RDC
 
